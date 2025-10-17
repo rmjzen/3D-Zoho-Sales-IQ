@@ -1,0 +1,127 @@
+/* ================================
+   Global Styles
+=================================== */
+body {
+    font-family: "Poppins", Arial, sans-serif !important;
+}
+
+/* ================================
+   Chat Header & Logo
+=================================== */
+body header {
+    background: linear-gradient(135deg, #1e90ff, #004aad) !important;
+    color: #fff !important;
+    height: 60px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px !important;
+}
+
+/* Hide the default header logo */
+body header img {
+    display: none !important;
+}
+
+/* Add custom logo (sample online logo) */
+body header::before {
+    content: "";
+    background: url("https://upload.wikimedia.org/wikipedia/commons/a/a9/Example.jpg") no-repeat center center;
+    background-size: contain;
+    display: inline-block;
+    height: 40px;
+    width: 120px;
+}
+
+/* ================================
+   Chat Window
+=================================== */
+body .zsiq-newtheme.siqembed.zls-sptwndw {
+    height: 550px !important;
+    width: 420px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Scrollbar styling */
+body .zsiq-scrollable::-webkit-scrollbar {
+    width: 6px;
+}
+body .zsiq-scrollable::-webkit-scrollbar-thumb {
+    background-color: #1e90ff;
+    border-radius: 3px;
+}
+
+/* ================================
+   Chat Widget Button
+=================================== */
+body .zsiq_flt_rel {
+    background-color: #1e90ff !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25) !important;
+}
+
+/* Move widget position */
+body .zsiq_floatmain {
+    right: 30px !important;
+    bottom: 30px !important;
+}
+
+/* ================================
+   Chat Bubbles
+=================================== */
+body .operator .zsiq-msg {
+    background-color: #f0f4ff !important;
+    color: #333 !important;
+    border-radius: 12px !important;
+}
+
+body .visitor .zsiq-msg {
+    background-color: #1e90ff !important;
+    color: #fff !important;
+    border-radius: 12px !important;
+}
+
+/* ================================
+   Input Field & Send Button
+=================================== */
+body .zsiq_footer input,
+body .zsiq_footer textarea {
+    background: #fff !important;
+    border: 1px solid #d0d0d0 !important;
+    border-radius: 8px !important;
+}
+
+body .zsiq_send {
+    background-color: #1e90ff !important;
+    border-radius: 50% !important;
+}
+
+/* ================================
+   Attachment & File Upload
+=================================== */
+.siq-file-attach {
+    background-color: #f0f4ff !important;
+    border: 1px dashed #1e90ff !important;
+    border-radius: 8px !important;
+}
+
+.siq-file-progress {
+    background-color: #1e90ff !important;
+}
+
+/* ================================
+   Responsive Behavior (Mobile)
+=================================== */
+@media only screen and (max-width: 555px) {
+  body .zsiq-newtheme.zsiq-mobhgt.siqembed {
+      height: 85% !important;
+      width: 90% !important;
+      border-radius: 10px !important;
+  }
+
+  body header::before {
+      height: 30px;
+      width: 100px;
+  }
+}
